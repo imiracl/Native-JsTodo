@@ -3,7 +3,7 @@
 // CUSTOM USER STYLES & IMPORTS
 
 .container {
-  max-width: 700px;
+  max-width: 470px;
   margin: auto;
   position: relative;
 }
@@ -157,20 +157,24 @@ input::placeholder {
 
 .d-flex {
   display: flex;
-  position: relative;
-  border: red 1px solid;
+  
+ 
+  justify-content: stretch;
   
 }
 .buttons {
   text-align: center;
   margin: 2px 4px;
-  position: absolute;
+  position: fixed;
   
   
-
+ 
   button {
     border-radius: 50%;
   }
+}
+.cover-buttons{
+  position: relative;
 }
 .btn-group {
   background-color: #336dd8;
@@ -188,19 +192,21 @@ input::placeholder {
   transition-duration: 0.4s;
   cursor: pointer;
   margin: 5px;
- 
+  margin-left: 20px;
   
+  
+ 
 }
 
 #todo {
-  margin: 0 auto;
+//  margin: 0 auto;
   box-shadow: 0 0 1em black;
   //max-width: 400px;
   height: 100%;
   background: white;
   margin-top: 30px;
+  border: solid 1px white;
  
-  
 }
 
 /*
