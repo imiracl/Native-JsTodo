@@ -19,7 +19,7 @@ function onPageLoaded() {
 
     ul.appendChild(li).append(deleteBtn , newTodo); //создание 'li', добавление текста и иконки удалить
     input.value = ""; // Очищение-обнуление элемента INPUT-text
-    jopa(); //Функция удаления to-do
+    removeTodo(); //Функция удаления to-do
   }
 
   //При нажатии на Энтер добовлять ТУДУ
@@ -28,13 +28,13 @@ function onPageLoaded() {
     //which возвращает числовой код клавиши нажатой клавиши
     if (keyPressed.which == keyEnter) {
       createTodo();
-      jopa();
+      removeTodo();
     }
   });
 
   //функция удаления туду дела
 
-  function jopa() {
+  function removeTodo() {
     let trashBtn = document.querySelectorAll(".todo-trash");
     for (let item of trashBtn) {
       item.addEventListener("click", function () {
@@ -44,7 +44,7 @@ function onPageLoaded() {
     }
   }
   loadTodos();
-  jopa();
+  removeTodo();
 
   function deleteTodo() {
     for (let span of spans) {
